@@ -1,4 +1,5 @@
 2012-01-22 mrtyler
 
 This is a holding pen for my resume and other resources related to
-hiring me.
+hiring me. It contains a Rakefile for generating different formats from
+the canonical HTML source.
