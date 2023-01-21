@@ -1,8 +1,8 @@
 require 'rake/clean'
 
-file "hireme.txt" => "hireme.html" do
-    puts "Generating hireme.txt from hireme.html..."
-    `w3m -dump hireme.html -cols 72 > hireme.txt`
+file "Tyler_Roscoe_-_Resume.txt" => "Tyler_Roscoe_-_Resume.html" do
+  puts "Generating Tyler_Roscoe_-_Resume.txt from Tyler_Roscoe_-_Resume.html..."
+  `w3m -dump Tyler_Roscoe_-_Resume.html -cols 72 > Tyler_Roscoe_-_Resume.txt`
 end
 
 file "references.txt" => "references.html" do
@@ -11,7 +11,7 @@ file "references.txt" => "references.html" do
 end
 
 desc "Generate .txt from .html. (DEFAULT)"
-task :txt => ["hireme.txt", "references.txt"]
-CLEAN.include("hireme.txt", "references.txt")
+task :txt => ["Tyler_Roscoe_-_Resume.txt", "references.txt"]
+CLEAN.include("Tyler_Roscoe_-_Resume.txt", "references.txt")
 
 task :default => [:txt]
